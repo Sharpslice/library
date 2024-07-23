@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <span>My Library </span>
+        
+    </div>
+    <button id="openModalButton">Add Book</button>
+    
+    <dialog>
+        <form>
+            <label for="title"></label>
+            <input type="text" id="title" name="name" required>
+
+            <label for="author"></label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="pages"></label>
+            <input type="text" id="pages" name="pages" required>
+
+            <label></label>
+            <select id="selectRead">
+                <option>Currently Reading</option>
+                <option>Read</option>
+            </select>
+           
+            <button id ="bookButton">Add</button>
+            <button id="cancelButton">Cancel</button>
+        </form>
+    </dialog>
+    <div id = "tableContainer">
+        <table id ="bookTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                </tr>
+            </thead>
+            <tbody id ="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
