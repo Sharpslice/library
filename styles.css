@@ -9,19 +9,26 @@ body{
 th,div,tr,td{
     color: white;
 }
+table{
+    
+    table-layout: fixed;
+}
 #header{
     text-align: center;
     font-size: 40px;
     
 }
-#openModalButton{
-   display: flex;
-   justify-content: center;
-}
-form{
+#buttonContainer{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding:15px 32px;
 }
+#openModalButton{
+    padding:10px 20px;
+    font-size: 15px;
+}
+
+
 
 #tableContainer{
     display: flex;
@@ -29,4 +36,28 @@ form{
 }
 td{
     text-align: center;
+    padding: 0px 5px;
+}
+
+label,input{
+    padding: 10px 5px;
+}
+dialog{
+    position: relative;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+form span{
+    text-align: center;
+}
+select{
+    margin:10px;
+}
+
+input[type='checkbox']{
+    margin:0px 15px;
 }
