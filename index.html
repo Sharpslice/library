@@ -12,18 +12,22 @@
         <span>My Library </span>
         
     </div>
-    <button id="openModalButton">Add Book</button>
+    <div id="buttonContainer">
+        <button id="openModalButton">Add Book</button>
+    </div>
+    
     
     <dialog>
         <form>
-            <label for="title"></label>
+            <span>New Book</span>
+            <label for="title"> <p>Title</p></label>
             <input type="text" id="title" name="name" required>
 
-            <label for="author"></label>
+            <label for="author"><p>Author</p></label>
             <input type="text" id="author" name="author" required>
 
-            <label for="pages"></label>
-            <input type="text" id="pages" name="pages" required>
+            <label for="pages"><p>Pages</p></label>
+            <input type="number" id="pages" name="pages" required>
 
             <label></label>
             <select id="selectRead">
@@ -31,8 +35,8 @@
                 <option>Read</option>
             </select>
            
-            <button id ="bookButton">Add</button>
-            <button id="cancelButton">Cancel</button>
+            <button type ="button" id ="bookButton">Add</button>
+            <button type ="button" id="cancelButton">Cancel</button>
         </form>
     </dialog>
     <div id = "tableContainer">
